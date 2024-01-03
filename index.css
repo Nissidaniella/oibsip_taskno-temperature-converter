@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+          35.36% 35.36% at 100% 25%,
+          #0000 66%,
+          #c79013 68% 70%,
+          #0000 72%
+        )
+        32px 32px / calc(2 * 32px) calc(2 * 32px),
+      radial-gradient(
+          35.36% 35.36% at 0 75%,
+          #0000 66%,
+          #c79013 68% 70%,
+          #0000 72%
+        )
+        32px 32px / calc(2 * 32px) calc(2 * 32px),
+      radial-gradient(
+          35.36% 35.36% at 100% 25%,
+          #0000 66%,
+          #c79013 68% 70%,
+          #0000 72%
+        )
+        0 0 / calc(2 * 32px) calc(2 * 32px),
+      radial-gradient(
+          35.36% 35.36% at 0 75%,
+          #0000 66%,
+          #c79013 68% 70%,
+          #0000 72%
+        )
+        0 0 / calc(2 * 32px) calc(2 * 32px),
+      repeating-conic-gradient(#295b3f 0 25%, #0000 0 50%) 0 0 / calc(2 * 32px)
+        calc(2 * 32px),
+      radial-gradient(#0000 66%, #c79013 68% 70%, #0000 72%) 0 calc(32px / 2) /
+        32px 32px #295b3f;
+  }
+  
+  h1 {
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-size: 4rem;
+    font-weight: 100;
+    opacity: 0.5;
+  }
+  
